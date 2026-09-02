@@ -143,6 +143,96 @@ footer{padding:27px 5vw;border-top:1px solid var(--line);display:flex;justify-co
   }
 }
 
+
+/* FINAL MOBILE FIX — client phone view */
+@media (max-width:700px){
+  .hero{
+    min-height:100svh;
+    min-height:100dvh;
+    height:auto;
+    padding:110px 20px 42px;
+    align-items:flex-end;
+  }
+  .hero-title{
+    width:100%;
+  }
+  .hero h1{
+    font-size:clamp(52px,16vw,82px);
+    line-height:.84;
+    letter-spacing:-.045em;
+    max-width:none;
+    width:100%;
+  }
+  .hero h1 span{
+    margin-left:7vw;
+    white-space:nowrap;
+  }
+  .hero-meta{
+    position:relative;
+    right:auto;
+    bottom:auto;
+    width:100%;
+    max-width:300px;
+    margin-top:28px;
+    font-size:11px;
+    line-height:1.65;
+  }
+
+  /* Contact title and buttons must never overflow the phone */
+  .contact{
+    min-height:100svh;
+    min-height:100dvh;
+    padding:90px 20px;
+  }
+  .contact h2{
+    font-size:clamp(54px,15vw,78px);
+    line-height:.86;
+    letter-spacing:-.04em;
+  }
+  .contact p{
+    font-size:11px;
+    max-width:300px;
+    margin:24px auto 28px;
+  }
+  .actions{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:stretch;
+  }
+  .actions .btn{
+    width:100%;
+    min-height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 14px;
+    white-space:normal;
+  }
+
+  /* Keep headings inside the viewport */
+  .storyhead h2,
+  .chooserhead h2,
+  .process h2{
+    font-size:clamp(48px,13vw,70px);
+    line-height:.86;
+  }
+  .storyhead{
+    gap:15px;
+  }
+  .storyhead span{
+    white-space:nowrap;
+  }
+
+  /* Gallery cards */
+  .storycard{
+    height:82vw;
+    min-height:270px;
+    max-height:410px;
+  }
+}
+
 </style>
 </head>
 <body>
