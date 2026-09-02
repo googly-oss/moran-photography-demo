@@ -1,12 +1,10 @@
-MORAN PHOTOGRAPHY — SUNRISE / INDIAN STORIES V2
+MORAN PHOTOGRAPHY — SUNRISE / INDIAN STORIES — V3
 
-Updated from the approved visual reference:
-- Indian wedding couple + sunrise/sunset hero
-- Indian wedding imagery for the first Selected Story
-- black / cream / warm-gold luxury styling
-- Selected Stories six-card grid
-- mobile Experience rows fixed so number/label and title no longer overlap
-- responsive mobile and desktop layouts
-- WhatsApp, call and enquire CTAs
+Updated:
+- Actual Unsplash wedding photographs are used instead of screenshot images.
+- Hero uses an Indian wedding couple image with warm cinematic treatment.
+- Weddings Selected Story uses a real Indian wedding portrait.
+- Mobile Experience rows have corrected spacing so CONNECT/PLAN/CREATE/DELIVER/CHERISH no longer overlap.
+- Existing gallery page retained.
 
-Demo imagery and statistics should be replaced/verified before commercial use.
+Demo imagery and business statistics should be replaced/verified before commercial deployment.
