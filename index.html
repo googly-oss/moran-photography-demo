@@ -233,6 +233,47 @@ footer{padding:27px 5vw;border-top:1px solid var(--line);display:flex;justify-co
   }
 }
 
+
+/* Floating WhatsApp CTA */
+.wa-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:9999;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25D366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.wa-float svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:2}
+.wa-float .wa-label{
+  position:absolute;
+  right:66px;
+  white-space:nowrap;
+  padding:9px 12px;
+  border-radius:18px;
+  background:#fff;
+  color:#151515;
+  font:500 11px/1 var(--sans,Arial,sans-serif);
+  letter-spacing:.02em;
+  box-shadow:0 5px 18px rgba(0,0,0,.2);
+}
+@media(max-width:700px){
+  .wa-float{
+    width:58px;height:58px;
+    right:16px;bottom:16px;
+  }
+  .wa-float .wa-label{display:none}
+}
+
 </style>
 </head>
 <body>
@@ -295,4 +336,16 @@ expButtons.forEach(btn=>btn.addEventListener('click',()=>{const d=experienceData
 <script>
 const c=document.getElementById('cursor');document.addEventListener('mousemove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});document.querySelectorAll('a').forEach(a=>{a.addEventListener('mouseenter',()=>c.classList.add('big'));a.addEventListener('mouseleave',()=>c.classList.remove('big'))});
 </script>
+
+<a class="wa-float"
+   href="https://wa.me/918638166831?text=Hi%20Moran%20Photography%2C%20I%27d%20like%20to%20know%20more%20about%20your%20photography%20services."
+   target="_blank" rel="noopener"
+   aria-label="Chat with Moran Photography on WhatsApp">
+  <span class="wa-label">Chat on WhatsApp</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 11.5a8.5 8.5 0 0 1-12.8 7.35L4 20l1.2-3.05A8.5 8.5 0 1 1 20 11.5Z"/>
+    <path d="M8.7 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4-.1.6l-.5.6c.7 1.2 1.5 2 2.7 2.7l.6-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.4-1.1.5-1.7.3-2.8-.9-5.1-3.2-6-6-.2-.6-.1-1.2.3-1.7Z"/>
+  </svg>
+</a>
+
 </body></html>
